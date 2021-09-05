@@ -13,18 +13,6 @@ h1, h2, h3, h4 {
     margin: 0.25rem 0;
 }
 
-button {
-    border: 2px solid #71CF7C;
-    color: #71CF7C;
-    border-radius: 0.25rem;
-    background: none;
-    padding: 0.5rem 1rem;
-}
-
-
-
-
-
 
 header {
     height: 3em;
@@ -205,6 +193,41 @@ header a:hover {
     justify-content: space-between;
     max-width: 1200px;
     width: calc(100% - 6rem);
+}
+
+.about a {
+    border: 2px solid #71CF7C;
+    color: #71CF7C;
+    border-radius: 0.25rem;
+    background: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: 200ms linear;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about a:hover {
+    width: 11rem;
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+.about a::after {
+    display: block;
+    content: '';
+    width: 10rem;
+    border-bottom: 2px solid #71CF7C;
+    transform: scaleX(0);
+    transition: 200ms ease-in-out;
+}
+
+.about a:hover::after {
+    transform: scaleX(1);
 }
 
 
